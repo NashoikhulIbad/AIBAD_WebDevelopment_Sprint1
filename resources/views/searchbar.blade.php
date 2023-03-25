@@ -25,7 +25,7 @@
                 <H2>ini percobaan</H2>
                 <input type="text" 
                     class="form-control form-input" 
-                    placeholder="Masukkan Keyword Agile">
+                    placeholder="Masukkan Keyword Agile...">
             <span class="left-pan"><i class="fa fa-microphone"></i></span>
                 </div>
             </div>
