@@ -21,6 +21,7 @@
             <div class="col-md-6">
                 <div class="form">
                 <i class="fa fa-search"></i>
+                <H1>Hallo semua</H1>
                 <input type="text" 
                     class="form-control form-input" 
                     placeholder="Masukkan Keyword Agile">
