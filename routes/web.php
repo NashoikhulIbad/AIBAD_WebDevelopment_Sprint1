@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\SearchController;
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\QuoteController;
 
 /*
 |--------------------------------------------------------------------------
@@ -14,4 +15,11 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
+// Search
 Route::get('/',[SearchController::class, 'index'])->name('quotes');
+
+//Quote
+Route::post('/quote', [QuoteController::class, 'postQuote'])->name('post-quote');
+Route::get('/quotes', [QuoteController::class, 'getQuotes'])->name('get-quotes');
+Route::put('/quote/{id}', [QuoteController::class, 'updateQuote'])->name('update-quote');
+Route::delete('/quote/delete/{id}', [QuoteController::class, 'deleteQuote'])->name('delete-quote');

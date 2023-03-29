@@ -16,7 +16,7 @@ class SearchController extends Controller
         } else {
             $data = Quote::all();
         }
-        dd($data);
+        // dd($data);
         return view('searchbar', compact('data'));
     }
 }
