@@ -11,12 +11,12 @@ class SearchController extends Controller
     public function index(Request $request)
     {
 
-        if ($request) {
-            $data = Quote::where('quote_name', 'like', '%' . $request->cari . 'interaksi');
-        } else {
-            $data = Quote::all();
-        }
+        // if ($request) {
+        //     $data = Quote::where('quote_name', 'like', '%' . $request->cari . '%');
+        // } else {
+        //     $data = Quote::all();
+        // }
         // dd($data);
-        return view('searchbar', compact('data'));
+        return view('welcome');
     }
 }
